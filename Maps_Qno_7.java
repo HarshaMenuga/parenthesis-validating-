@@ -1,10 +1,3 @@
-package maps;
-
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
-
-
 public class Maps_Qno_7 {
 
 	public static void main(String[] args) {
@@ -17,7 +10,7 @@ public class Maps_Qno_7 {
 			map1.put(3, "Meenuga");
 			map1.put(4, "OvalEdge");
 			map1.put(1, "ram");
-
+			try {	
 			System.out.println("Values in first map :"+map1);
 			System.out.println("Enter key :");
 			int specific_key = sc.nextInt();
@@ -26,6 +19,9 @@ public class Maps_Qno_7 {
 				}
 				else
 					System.out.println("wrong key");
+				}
+			catch(InputMismatchException e) {
+				System.out.println("only provide numbers only :");
 			}
-	}
-
+	}	
+}
